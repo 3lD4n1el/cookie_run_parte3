@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie Run · Parte 3 — Clase de Español A1–A2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Chakra+Petch:wght@600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ambiente -->
+<div class="copo" style="left:8%;font-size:14px;animation-duration:11s">❄</div>
+<div class="copo" style="left:24%;font-size:10px;animation-duration:14s;animation-delay:2s">❄</div>
+<div class="copo" style="left:46%;font-size:12px;animation-duration:9s;animation-delay:4s">❅</div>
+<div class="copo" style="left:63%;font-size:9px;animation-duration:16s;animation-delay:1s">❄</div>
+<div class="copo" style="left:78%;font-size:13px;animation-duration:12s;animation-delay:3s">❆</div>
+<div class="copo" style="left:92%;font-size:11px;animation-duration:10s;animation-delay:5s">❄</div>
+<div id="norte"><svg viewBox="0 0 1200 128" preserveAspectRatio="xMidYMax slice">
+  <!-- montañas -->
+  <path d="M0,110 L120,44 L200,86 L300,26 L420,110 Z" fill="#8fa8c8"/>
+  <path d="M300,26 L330,48 L270,48 Z" fill="#ffffff"/>
+  <path d="M120,44 L142,62 L98,62 Z" fill="#ffffff"/>
+  <path d="M760,112 L880,40 L960,80 L1060,30 L1200,112 Z" fill="#8fa8c8"/>
+  <path d="M1060,30 L1090,52 L1030,52 Z" fill="#ffffff"/>
+  <path d="M880,40 L902,58 L858,58 Z" fill="#ffffff"/>
+  <!-- muralla de cacao -->
+  <g fill="#4a2e1a">
+    <rect x="430" y="66" width="340" height="46"/>
+    <rect x="430" y="58" width="26" height="12"/><rect x="480" y="58" width="26" height="12"/><rect x="530" y="58" width="26" height="12"/>
+    <rect x="580" y="58" width="26" height="12"/><rect x="630" y="58" width="26" height="12"/><rect x="680" y="58" width="26" height="12"/><rect x="730" y="58" width="26" height="12"/>
+    <rect x="560" y="40" width="34" height="72"/><polygon points="552,40 602,40 577,14"/>
+  </g>
+  <g fill="#e0a63a"><rect x="572" y="56" width="10" height="14" rx="3"/><rect x="470" y="82" width="10" height="14" rx="3"/><rect x="700" y="82" width="10" height="14" rx="3"/></g>
+  <path d="M577,14 L582,2 L589,12 Z" fill="#5aa8d8"/>
+  <!-- suelo nevado -->
+  <path d="M0,108 Q220,96 460,106 T900,102 T1200,108 L1200,128 L0,128 Z" fill="#ffffff" opacity=".92"/>
+  <g fill="#cfe0f0"><circle cx="180" cy="120" r="6"/><circle cx="840" cy="122" r="5"/><circle cx="1020" cy="118" r="6"/></g>
+</svg></div>
+<div id="ventisca"></div>
+<div id="cutin"><div class="big" id="cutinTxt">¡LA MURALLA RESISTE!</div><div class="sub">Cookie Run · Parte 3 · Reino del Cacao Oscuro</div></div>
+
+<div id="hud">
+  <div class="emblem"></div>
+  <div class="title">Cookie Run · Parte 3 <span>· Español A1–A2</span></div>
+  <div id="progressWrap"><div id="progressBar"></div><div id="runMark">❄️</div></div>
+  <div id="counter"><b>01</b> / 23</div>
+</div>
+
+<div class="nav" id="prev">‹</div>
+<div class="nav" id="next">›</div>
+
+<div id="deck">
+
+<!-- 0 · PORTADA -->
+<section class="slide" id="s0">
+  <div class="inner">
+    <div class="tagline">El norte helado · Cookie Run: Kingdom</div>
+    <div class="badge"><svg viewBox="0 0 210 150">
+      <path d="M10,120 L60,50 L96,86 L130,36 L200,120 Z" fill="#8fa8c8"/>
+      <path d="M130,36 L152,56 L108,56 Z" fill="#fff"/>
+      <g fill="#4a2e1a">
+        <rect x="70" y="92" width="80" height="30"/>
+        <rect x="70" y="86" width="16" height="8"/><rect x="96" y="86" width="16" height="8"/><rect x="122" y="86" width="16" height="8"/>
+      </g>
+      <g transform="rotate(-18 108 66)">
+        <rect x="104" y="26" width="9" height="52" fill="#cfd8e8"/>
+        <path d="M104,26 L113,26 L108.5,12 Z" fill="#e8eef8"/>
+        <rect x="96" y="76" width="25" height="7" rx="2" fill="#5a3a24"/>
+        <rect x="104" y="83" width="9" height="14" rx="3" fill="#3a2418"/>
+        <circle cx="108.5" cy="79" r="4" fill="#7b4bd8"/>
+      </g>
+      <text x="28" y="40" font-size="20" fill="#5aa8d8">❄</text>
+      <text x="176" y="52" font-size="15" fill="#a8d8f0">❄</text>
+      <text x="186" y="120" font-size="14" fill="#e0a63a">✦</text>
+    </svg></div>
+    <h1>El <span class="accentC">Reino del Cacao Oscuro</span></h1>
+    <p class="lead">En el norte helado hay una muralla enorme y un rey que lucha solo. Hoy cuentas cómo <b>era</b> todo antes 🎞️ y aprendes el atajo mágico: <b>lo, la, los, las</b> 🔁. <span class="kr">얼어붙은 북쪽 왕국으로!</span></p>
+    <div class="recap">
+      <span>⚖️ Ya usas la balanza</span>
+      <span>🪃 Ya tienes el bumerán</span>
+    </div>
+    <button class="btn cacao" data-go="1">Cruzar la nieve ›</button>
+  </div>
+</section>
+
+<!-- 1 · OBJETIVOS -->
+<section class="slide" id="s1">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Misión del norte</div>
+    <h2>Tu misión de hoy</h2>
+    <div class="objectives">
+      <div class="obj" style="--qc:var(--hielo)"><span class="qz"></span><span class="mark">VOCAB</span> La nieve, la muralla y la espada <span class="kr">· 어휘</span></div>
+      <div class="obj" style="--qc:var(--oro)"><span class="qz"></span><span class="mark">GRAMÁTICA</span> Antes era así: la foto antigua 🎞️ <span class="kr">· 불완료 과거</span></div>
+      <div class="obj" style="--qc:var(--cacao)"><span class="qz"></span><span class="mark">GRAMÁTICA</span> Lo, la, los, las: el atajo mágico 🔁 <span class="kr">· 목적격 대명사</span></div>
+      <div class="obj" style="--qc:var(--uva)"><span class="qz"></span><span class="mark">LECTURA</span> El pasado del reino y la búsqueda <span class="kr">· 독해</span></div>
+      <div class="obj" style="--qc:var(--sombra)"><span class="qz"></span><span class="mark">COMBATE</span> El Centinela de Hielo y Dark Choco <span class="kr">· 보스전</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · ROSTER -->
+<section class="slide" id="s2">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Expediente · El norte</div>
+    <h2>Las galletas del <span class="accentH">hielo</span></h2>
+    <p class="lead" style="font-size:15px">Toca cada carta: aquí casi todos tienen un pasado. <span class="kr">카드를 눌러 보세요!</span></p>
+    <div class="roster" id="roster"></div>
+  </div>
+</section>
+
+<!-- 3 · VOCABULARIO -->
+<section class="slide" id="s3">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Equipo de misión · Vocabulario</div>
+    <h2>El equipo de <span class="accentO">invierno</span></h2>
+    <p class="lead" style="font-size:15px">Ocho palabras nuevas. Toca para ver el coreano y un ejemplo. <span class="kr">새 단어 = 새 장비!</span></p>
+    <div class="cards" id="vocabCards"></div>
+  </div>
+</section>
+
+<!-- 4 · INTRUSO -->
+<section class="slide" id="s4">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Actividad · Detecta al intruso</div>
+    <h2>¿Cuál es <span class="accentC">el intruso</span>?</h2>
+    <p class="lead" style="font-size:15px">Tres palabras son del mismo grupo. Una no pertenece… ¡encuéntrala! <span class="kr">스파이 단어를 찾아라!</span></p>
+    <div class="scene solo">
+      <svg viewBox="0 0 700 88" preserveAspectRatio="xMidYMax slice">
+        <defs><linearGradient id="nieve" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8d0ea"/><stop offset="1" stop-color="#e8f2fb"/></linearGradient></defs>
+        <rect width="700" height="88" fill="url(#nieve)"/>
+        <path d="M40,76 L110,26 L160,58 L210,20 L280,76 Z" fill="#8fa8c8"/>
+        <path d="M210,20 L228,36 L192,36 Z" fill="#fff"/>
+        <path d="M430,76 L500,28 L548,58 L600,24 L670,76 Z" fill="#8fa8c8"/>
+        <path d="M600,24 L618,40 L582,40 Z" fill="#fff"/>
+        <g fill="#4a2e1a"><rect x="300" y="52" width="110" height="24"/><rect x="300" y="46" width="18" height="8"/><rect x="330" y="46" width="18" height="8"/><rect x="360" y="46" width="18" height="8"/><rect x="392" y="46" width="18" height="8"/></g>
+        <g fill="#e8f2fb"><circle cx="120" cy="24" r="3"/><circle cx="520" cy="18" r="2.5"/><circle cx="380" cy="22" r="3"/></g>
+        <path d="M0,74 Q180,66 380,72 T700,70 L700,88 L0,88 Z" fill="#ffffff"/>
+      </svg>
+      <span class="lbl">La Muralla de Cacao</span>
+    </div>
+    <div class="roundtag" id="intrusoRound">Ronda 1 / 3</div>
+    <div class="intruso-words" id="intrusoWords"></div>
+    <div class="feedback" id="intrusoFb"></div>
+  </div>
+</section>
+
+<!-- 5 · IMPERFECTO COGNITIVO -->
+<section class="slide" id="s5">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz" style="background:var(--oro)"></span>Gramática cognitiva · I</div>
+    <h2>La <span class="accentO">foto antigua</span> 🎞️</h2>
+    <div class="cog">
+      <div class="panel cogbox">
+        <h3>La idea</h3>
+        <div class="marco"><svg viewBox="0 0 260 110" class="sepia">
+          <rect width="260" height="110" fill="#e8d8b8"/>
+          <circle cx="212" cy="26" r="14" fill="#d8b06a"/>
+          <path d="M0,84 Q70,70 140,82 T260,78 L260,110 L0,110 Z" fill="#b8a070"/>
+          <g fill="#8a6a3a"><rect x="60" y="52" width="16" height="32"/><polygon points="54,52 82,52 68,32"/><rect x="96" y="58" width="14" height="26"/><polygon points="91,58 115,58 103,42"/></g>
+          <g fill="#a88a58"><circle cx="170" cy="74" r="10"/><circle cx="192" cy="76" r="8"/></g>
+          <g fill="#6a5230"><circle cx="167" cy="71" r="1.8"/><circle cx="190" cy="73" r="1.6"/></g>
+        </svg></div>
+        <p class="bigidea">El imperfecto es una <b>foto vieja</b>: enseña cómo <b>era</b> el mundo antes, sin decir cuándo empezó ni cuándo terminó.<br>Antes el reino <b>era</b> cálido y la gente <b>vivía</b> feliz. <span class="kr">옛날 사진처럼 = 예전의 모습</span></p>
+      </div>
+      <div class="panel cogbox">
+        <h3>¿Cuándo se usa?</h3>
+        <div class="pares">
+          <div class="par"><span class="em">🖼️</span><span>Describir el pasado<small>El castillo <b>era</b> dorado.</small></span></div>
+          <div class="par"><span class="em">🔁</span><span>Cosas repetidas<small>Todos los días <b>entrenaban</b>.</small></span></div>
+          <div class="par"><span class="em">👶</span><span>Cuando eras niña<small><b>Jugaba</b> con mi papá.</small></span></div>
+        </div>
+        <p class="bigidea" style="margin-top:8px"><span class="g">Palabras amigas:</span> antes · hace muchos años · cuando era niño · siempre · todos los días</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · TABLA IMPERFECTO -->
+<section class="slide" id="s6">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz" style="background:var(--oro)"></span>Gramática cognitiva · II</div>
+    <h2>Solo <span class="accentF">dos</span> terminaciones (¡y tres rebeldes!)</h2>
+    <div class="tables">
+      <table class="conj panel">
+        <caption>🎞️ -AR → -aba · -ER/-IR → -ía</caption>
+        <tr><th>yo</th><td>jug<span class="end">aba</span> · viv<span class="end">ía</span></td></tr>
+        <tr><th>tú</th><td>jug<span class="end">abas</span> · viv<span class="end">ías</span></td></tr>
+        <tr><th>él / ella</th><td>jug<span class="end">aba</span> · viv<span class="end">ía</span></td></tr>
+        <tr><th>nosotros</th><td>jug<span class="end">ábamos</span> · viv<span class="end">íamos</span></td></tr>
+        <tr><th>ustedes / ellos</th><td>jug<span class="end">aban</span> · viv<span class="end">ían</span></td></tr>
+      </table>
+      <table class="conj panel">
+        <caption>⚠️ Los tres rebeldes</caption>
+        <tr><th>ser</th><td><span class="end">era</span>, eras, era, éramos, eran</td></tr>
+        <tr><th>ir</th><td><span class="end">iba</span>, ibas, iba, íbamos, iban</td></tr>
+        <tr><th>ver</th><td><span class="end">veía</span>, veías, veía, veíamos, veían</td></tr>
+        <tr><th>✅</th><td>¡Solo estos tres son irregulares!</td></tr>
+      </table>
+    </div>
+    <p class="notice">💡 Compara con lo que ya sabes: <b>Ayer luché</b> una vez (pretérito ⚔️) · <b>Antes luchaba</b> todos los días (imperfecto 🎞️). El imperfecto es el fondo de la escena; el pretérito, el golpe.</p>
+  </div>
+</section>
+
+<!-- 7 · ÁLBUM DEL RECUERDO -->
+<section class="slide" id="s7">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz" style="background:var(--oro)"></span>Actividad · El álbum del rey</div>
+    <h2>El <span class="accentO">recuerdo</span> que vuelve 🖼️</h2>
+    <p class="lead" style="font-size:15px">Cada respuesta correcta hace aparecer una parte del recuerdo. ¿Ves cómo era el reino antes? <span class="kr">기억이 하나씩 나타난다!</span></p>
+    <div class="forge-count" id="albCount">Recuerdo 1 / 6</div>
+    <div class="album"><svg viewBox="0 0 480 200" class="sepia">
+      <rect width="480" height="200" fill="#efe0c0"/>
+      <g id="r1" class="rec"><circle cx="410" cy="36" r="24" fill="#e8c070"/><g stroke="#e8c070" stroke-width="3" stroke-linecap="round"><path d="M410,0 L410,8"/><path d="M448,36 L456,36"/><path d="M436,10 L442,4"/></g></g>
+      <g id="r2" class="rec"><path d="M0,150 Q120,132 240,146 T480,140 L480,200 L0,200 Z" fill="#a8bc78"/></g>
+      <g id="r3" class="rec" fill="#c9a24a">
+        <rect x="180" y="70" width="26" height="80"/><polygon points="172,70 214,70 193,42"/>
+        <rect x="250" y="58" width="30" height="92"/><polygon points="242,58 288,58 265,28"/>
+        <rect x="206" y="94" width="44" height="56"/>
+        <rect x="190" y="86" width="8" height="12" rx="3" fill="#f3ead6"/><rect x="261" y="74" width="8" height="12" rx="3" fill="#f3ead6"/>
+      </g>
+      <g id="r4" class="rec"><g transform="translate(120,132)"><circle cx="0" cy="0" r="17" fill="#9a7a4a"/><circle cx="-5" cy="-4" r="2.6" fill="#4a3a20"/><circle cx="5" cy="-4" r="2.6" fill="#4a3a20"/><path d="M-6,6 Q0,11 6,6" stroke="#4a3a20" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M-14,-12 L-8,-22 L0,-14 L8,-22 L14,-12 Z" fill="#c9a24a"/></g></g>
+      <g id="r5" class="rec"><g transform="translate(160,142)"><circle cx="0" cy="0" r="12" fill="#a88a58"/><circle cx="-4" cy="-3" r="2" fill="#4a3a20"/><circle cx="4" cy="-3" r="2" fill="#4a3a20"/><path d="M-4,4 Q0,8 4,4" stroke="#4a3a20" stroke-width="1.6" fill="none" stroke-linecap="round"/><rect x="12" y="-14" width="4" height="22" fill="#d8c090" transform="rotate(18 14 -3)"/></g></g>
+      <g id="r6" class="rec"><g fill="#d8b06a"><circle cx="60" cy="160" r="5"/><circle cx="90" cy="166" r="4"/><circle cx="340" cy="162" r="5"/><circle cx="380" cy="168" r="4"/><circle cx="420" cy="160" r="4"/></g>
+        <text x="240" y="192" font-size="13" fill="#8a6a3a" text-anchor="middle" font-family="Fredoka, sans-serif">— El reino del sol, hace muchos años —</text></g>
+    </svg></div>
+    <div class="panel" style="width:100%;max-width:700px"><p class="forge-sentence" id="albSentence" style="font-size:18.5px"></p></div>
+    <div class="endings" id="albOpts"></div>
+    <div class="feedback" id="albFb"></div>
+  </div>
+</section>
+
+<!-- 8 · LECTURA 1 -->
+<section class="slide" id="s8">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz" style="background:var(--oro)"></span>Lectura 1 · Capítulo cinco</div>
+    <h2>Cuando el reino <span class="accentO">era de oro</span></h2>
+    <div class="scene">
+      <svg viewBox="0 0 760 96" preserveAspectRatio="xMidYMax slice">
+        <defs><linearGradient id="pasado" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3dfae"/><stop offset="1" stop-color="#dcc48a"/></linearGradient></defs>
+        <rect width="760" height="96" fill="url(#pasado)"/>
+        <circle cx="660" cy="26" r="18" fill="#e8c070"/>
+        <g fill="#c9a24a">
+          <rect x="300" y="40" width="22" height="56"/><polygon points="293,40 329,40 311,16"/>
+          <rect x="360" y="30" width="26" height="66"/><polygon points="352,30 394,30 373,4"/>
+          <rect x="322" y="56" width="38" height="40"/>
+        </g>
+        <g fill="#fff6e0"><rect x="308" y="52" width="8" height="11" rx="3"/><rect x="369" y="44" width="8" height="11" rx="3"/></g>
+        <g fill="#a88a58"><circle cx="170" cy="72" r="13"/><circle cx="200" cy="76" r="10"/><circle cx="520" cy="74" r="12"/></g>
+        <g fill="#5a4420"><circle cx="166" cy="68" r="2.4"/><circle cx="198" cy="73" r="2"/><circle cx="517" cy="70" r="2.2"/></g>
+        <path d="M0,80 Q200,70 420,78 T760,74 L760,96 L0,96 Z" fill="#a8bc78"/>
+      </svg>
+      <span class="lbl">Hace muchos años · el reino del sol</span>
+    </div>
+    <div class="panel reading" style="border-top:none;margin-top:-15px">
+      <p>Hace muchos años, el Reino del Cacao Oscuro no <span class="vb">era</span> frío: el sol <span class="vb">brillaba</span>, los campos <span class="vb">estaban</span> verdes y el castillo <span class="vb">parecía</span> de oro. El rey Dark Cacao <span class="vb">entrenaba</span> cada mañana con su hijo, el príncipe Dark Choco. Los dos <span class="vb">iban</span> juntos a la muralla y <span class="vb">veían</span> el amanecer.</p>
+      <p>El príncipe <span class="vb">era</span> valiente y <span class="vb">quería</span> ser tan fuerte como su padre. Pero un día <span class="vb2">encontró</span> una espada oscura. La espada le <span class="vb2">habló</span> y él la <span class="vb2">tomó</span>. Entonces todo <span class="vb2">cambió</span>: llegó la oscuridad, el reino se <span class="vb2">congeló</span> y el príncipe <span class="vb2">desapareció</span> en la nieve.</p>
+    </div>
+    <div class="gloss">
+      <span><b>brillar</b> · 빛나다</span>
+      <span><b>el campo</b> · 들판</span>
+      <span><b>parecer</b> · ~처럼 보이다</span>
+      <span><b>el amanecer</b> · 새벽</span>
+      <span><b>congelarse</b> · 얼어붙다</span>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · DETECTIVE -->
+<section class="slide" id="s9">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Comprensión · Modo detective</div>
+    <h2>El texto no lo dice… <span class="accentC">¡pero tú lo sabes!</span></h2>
+    <div class="roundtag" id="detRound">Pregunta 1 / 4</div>
+    <p class="quiz-q" id="detQ"></p>
+    <div class="options" id="detOpts"></div>
+    <p class="explain" id="detExp"></p>
+  </div>
+</section>
+
+<!-- 10 · PRONOMBRES COGNITIVO -->
+<section class="slide" id="s10">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz" style="background:var(--cacao)"></span>Gramática cognitiva · III</div>
+    <h2>El <span class="accentC">atajo mágico</span> 🔁</h2>
+    <div class="cog">
+      <div class="panel cogbox">
+        <h3>La idea</h3>
+        <p class="atajo">
+          — ¿Tienes <b>la espada</b>?<br>
+          — Sí, tengo <span class="tach">la espada</span> 😵<br>
+          — Sí, <span class="rep">la</span> tengo. 😎
+        </p>
+        <p class="bigidea" style="margin-top:6px">Repetir la palabra es lento. El atajo la sustituye con una palabra pequeñita que va <b>delante del verbo</b>. <span class="kr">반복 대신 짧은 대명사!</span></p>
+      </div>
+      <div class="panel cogbox">
+        <h3>Los cuatro atajos</h3>
+        <div class="pares">
+          <div class="par"><span class="em">🗡️</span><span>el mapa → <b>lo</b><small>¿Ves el mapa? Sí, <b>lo</b> veo.</small></span></div>
+          <div class="par"><span class="em">❄️</span><span>la espada → <b>la</b><small>¿Buscas la espada? Sí, <b>la</b> busco.</small></span></div>
+          <div class="par"><span class="em">🏹</span><span>los arcos → <b>los</b><small>¿Tienes los arcos? Sí, <b>los</b> tengo.</small></span></div>
+          <div class="par"><span class="em">🧱</span><span>las murallas → <b>las</b><small>¿Ves las murallas? Sí, <b>las</b> veo.</small></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · TABLA PRONOMBRES -->
+<section class="slide" id="s11">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz" style="background:var(--cacao)"></span>Gramática cognitiva · IV</div>
+    <h2>¿Dónde <span class="accentH">se pone</span> el atajo?</h2>
+    <div class="tables">
+      <table class="conj panel">
+        <caption>📍 Delante del verbo</caption>
+        <tr><th>+</th><td><span class="end">La</span> veo en la nieve.</td></tr>
+        <tr><th>−</th><td>No <span class="end">lo</span> encuentro.</td></tr>
+        <tr><th>?</th><td>¿<span class="end">Los</span> conoces?</td></tr>
+        <tr><th>👤</th><td>¿Ves a Dark Choco? Sí, <span class="end">lo</span> veo.</td></tr>
+      </table>
+      <table class="conj panel">
+        <caption>🔗 Pegado al infinitivo</caption>
+        <tr><th>2 formas</th><td><span class="end">La</span> quiero encontrar.</td></tr>
+        <tr><th>= igual</th><td>Quiero encontrar<span class="end">la</span>.</td></tr>
+        <tr><th>2 formas</th><td><span class="end">Los</span> voy a ayudar.</td></tr>
+        <tr><th>= igual</th><td>Voy a ayudar<span class="end">los</span>.</td></tr>
+      </table>
+    </div>
+    <p class="notice">💡 El atajo copia el género y el número de la palabra: la espada → <b>la</b> · los soldados → <b>los</b>. ¡Y también sirve para personas! Con la orden se pega detrás: <b>¡Encuéntrala!</b></p>
+  </div>
+</section>
+
+<!-- 12 · MURALLA -->
+<section class="slide" id="s12">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz" style="background:var(--cacao)"></span>Actividad · Reparar la muralla</div>
+    <h2>El eco de la <span class="accentC">Muralla de Cacao</span> 🧱</h2>
+    <p class="lead" style="font-size:15px">Contesta con el atajo correcto: cada acierto repara un bloque de la muralla. <span class="kr">정답을 맞히면 성벽이 복구된다!</span></p>
+    <div class="forge-count" id="murCount">Bloque 1 / 6</div>
+    <div class="muralla">
+      <svg viewBox="0 0 600 150">
+        <defs><linearGradient id="cieloN" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fb0d8"/><stop offset="1" stop-color="#cfe0f0"/></linearGradient></defs>
+        <rect width="600" height="150" fill="url(#cieloN)"/>
+        <path d="M0,110 L90,50 L150,86 L210,44 L300,110 Z" fill="#7a92b4"/>
+        <path d="M300,110 L390,54 L450,88 L520,48 L600,110 Z" fill="#7a92b4"/>
+        <g fill="#4a2e1a">
+          <rect id="b1" class="bloque" x="60" y="86" width="76" height="34"/>
+          <rect id="b2" class="bloque" x="146" y="86" width="76" height="34"/>
+          <rect id="b3" class="bloque" x="232" y="86" width="76" height="34"/>
+          <rect id="b4" class="bloque" x="318" y="86" width="76" height="34"/>
+          <rect id="b5" class="bloque" x="404" y="86" width="76" height="34"/>
+          <rect id="b6" class="bloque" x="490" y="86" width="76" height="34"/>
+        </g>
+        <g fill="#3a2418">
+          <rect x="60" y="78" width="24" height="10"/><rect x="112" y="78" width="24" height="10"/><rect x="164" y="78" width="24" height="10"/>
+          <rect x="216" y="78" width="24" height="10"/><rect x="268" y="78" width="24" height="10"/><rect x="320" y="78" width="24" height="10"/>
+          <rect x="372" y="78" width="24" height="10"/><rect x="424" y="78" width="24" height="10"/><rect x="476" y="78" width="24" height="10"/><rect x="528" y="78" width="24" height="10"/>
+        </g>
+        <g fill="#e0a63a"><rect x="90" y="96" width="9" height="13" rx="3"/><rect x="290" y="96" width="9" height="13" rx="3"/><rect x="500" y="96" width="9" height="13" rx="3"/></g>
+        <path d="M0,118 Q160,110 320,116 T600,114 L600,150 L0,150 Z" fill="#ffffff"/>
+        <g fill="#cfe0f0"><circle cx="120" cy="136" r="6"/><circle cx="470" cy="138" r="5"/></g>
+      </svg>
+    </div>
+    <div class="panel" style="width:100%;max-width:700px"><p class="forge-sentence" id="murSentence" style="font-size:18.5px"></p></div>
+    <div class="endings" id="murOpts"></div>
+    <div class="feedback" id="murFb"></div>
+  </div>
+</section>
+
+<!-- 13 · LECTURA 2 -->
+<section class="slide" id="s13">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz" style="background:var(--sombra)"></span>Lectura 2 · Capítulo seis</div>
+    <h2>La búsqueda del <span class="accentU">príncipe</span></h2>
+    <div class="scene">
+      <svg viewBox="0 0 760 96" preserveAspectRatio="xMidYMax slice">
+        <defs><linearGradient id="noche2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22304a"/><stop offset="1" stop-color="#3d4f6e"/></linearGradient></defs>
+        <rect width="760" height="96" fill="url(#noche2)"/>
+        <circle cx="90" cy="24" r="14" fill="#e8f2fb" opacity=".85"/>
+        <path d="M420,90 L520,32 L580,64 L650,26 L740,90 Z" fill="#2a3a56"/>
+        <path d="M650,26 L668,42 L632,42 Z" fill="#e8f2fb"/>
+        <g fill="#1e2a40"><rect x="150" y="52" width="130" height="38"/><rect x="150" y="46" width="20" height="8"/><rect x="182" y="46" width="20" height="8"/><rect x="214" y="46" width="20" height="8"/><rect x="246" y="46" width="20" height="8"/></g>
+        <g transform="translate(340,60)">
+          <circle cx="0" cy="0" r="13" fill="#5a4a6a"/>
+          <circle cx="-4" cy="-3" r="2.4" fill="#c9a8e8"/><circle cx="4" cy="-3" r="2.4" fill="#c9a8e8"/>
+          <rect x="14" y="-24" width="5" height="34" fill="#9a8ab8" transform="rotate(16 16 -7)"/>
+          <circle cx="20" cy="-24" r="4" fill="#7b4bd8"/>
+        </g>
+        <g fill="#e8f2fb" opacity=".8"><circle cx="200" cy="20" r="2"/><circle cx="480" cy="16" r="2.4"/><circle cx="600" cy="14" r="1.8"/></g>
+        <path d="M0,80 Q200,72 420,80 T760,76 L760,96 L0,96 Z" fill="#e8f2fb" opacity=".9"/>
+      </svg>
+      <span class="lbl">Noche de ventisca</span>
+    </div>
+    <div class="panel reading" style="border-top:none;margin-top:-15px">
+      <p>GingerBrave y su equipo llegan a la muralla. —Buscamos al príncipe perdido —dice Caramel Arrow—. ¿<span class="vb2">Lo</span> conocen? El rey Dark Cacao mira la nieve y no responde. En su mano tiene un retrato viejo: <span class="vb2">lo</span> mira todos los días.</p>
+      <p>De repente, entre la ventisca aparece una figura con una espada oscura. —¡Es él! ¡<span class="vb2">Lo</span> veo! —grita GingerBrave. El príncipe ataca sin hablar. —Hijo, ¿no me recuerdas? —dice el rey—. Antes <span class="vb">entrenábamos</span> juntos, <span class="vb">íbamos</span> a la muralla, <span class="vb">veíamos</span> el amanecer… El príncipe se detiene un segundo. La espada oscura brilla y <span class="vb2">lo</span> arrastra otra vez a la nieve.</p>
+    </div>
+    <div class="gloss">
+      <span><b>la ventisca</b> · 눈보라</span>
+      <span><b>el retrato</b> · 초상화</span>
+      <span><b>la figura</b> · 형체</span>
+      <span><b>detenerse</b> · 멈추다</span>
+      <span><b>arrastrar</b> · 끌고 가다</span>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · ORDENA -->
+<section class="slide" id="s14">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Comprensión · La historia</div>
+    <h2>Ordena la historia <span class="accentC">1 → 5</span></h2>
+    <p class="lead" style="font-size:15px">Toca los momentos en el orden correcto. <span class="kr">이야기 순서대로 누르세요!</span></p>
+    <div class="order-list" id="orderList"></div>
+    <div class="feedback" id="orderFb"></div>
+  </div>
+</section>
+
+<!-- 15 · COMBATE 1 -->
+<section class="slide" id="s15">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Combate · ¡Alerta en la muralla!</div>
+    <h2>¡Un <span class="accentH">Centinela de Hielo</span> despierta!</h2>
+    <div class="battlefield" id="battlefield">
+      <svg style="position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.85" viewBox="0 0 760 240" preserveAspectRatio="xMidYMax slice">
+        <path d="M40,220 L140,140 L200,180 L270,130 L360,220 Z" fill="#2e4058"/>
+        <path d="M480,220 L580,146 L640,186 L700,140 L760,220 Z" fill="#2e4058"/>
+        <g fill="#1e2a3e"><rect x="330" y="180" width="110" height="40"/><rect x="330" y="172" width="20" height="10"/><rect x="362" y="172" width="20" height="10"/><rect x="394" y="172" width="20" height="10"/></g>
+        <g fill="#cfe4f5" opacity=".6"><circle cx="200" cy="60" r="3"/><circle cx="520" cy="44" r="2.5"/><circle cx="620" cy="76" r="3"/></g>
+      </svg>
+      <div class="battle-top">
+        <span class="enemy-tag">⚠ Enemigo · Guardián congelado</span>
+        <div class="party" title="Tu equipo">
+          <i style="background:var(--cacao)"></i><i style="background:var(--hielo)"></i><i style="background:var(--oro)"></i><i style="background:var(--fresa)"></i><i style="background:var(--uva)"></i><i style="background:#fff"></i>
+        </div>
+      </div>
+      <div class="arena">
+        <div class="aura"></div>
+        <div class="sprite" id="bossSprite">🧊</div>
+        <div class="hplabel">Centinela de Hielo · HP</div>
+        <div class="hpbar"><div class="hpfill" id="bossHp"></div></div>
+      </div>
+      <div class="miniSlash" id="miniSlash"></div>
+    </div>
+    <div id="bossGame" style="display:flex;flex-direction:column;align-items:center;gap:12px;width:100%">
+      <p class="quiz-q" id="bossQ"></p>
+      <div class="options" id="bossOpts" style="max-width:520px"></div>
+    </div>
+    <div id="bossWin" class="hidden" style="text-align:center">
+      <p class="victory">❄️ ¡VICTORIA! ❄️</p>
+      <p class="lead">El centinela se derritió y dejó ver un retrato antiguo del rey con su hijo 🖼️. Esa noche, entre la ventisca, aparece una figura con una espada oscura…</p>
+      <button class="btn gold" data-go="16" style="margin-top:12px">Continuar: Acto II ›</button>
+    </div>
+  </div>
+</section>
+
+<!-- 16 · ACTO II -->
+<section class="slide" id="sInter">
+  <div class="inner">
+    <div class="chapter" style="max-width:640px;width:100%">
+      <div class="acto">✦ Acto II ✦</div>
+      <h1>El príncipe de la <span class="accentU">espada oscura</span></h1>
+      <p class="pausa">🍫 Pausa de 5 minutos · 5분 휴식!</p>
+    </div>
+    <div class="objectives" style="max-width:560px">
+      <div class="obj" style="--qc:var(--hielo)"><span class="qz"></span><span class="mark">JUEGO</span> Memoria del norte <span class="kr">· 기억 게임</span></div>
+      <div class="obj" style="--qc:var(--oro)"><span class="qz"></span><span class="mark">HABLAR</span> Entrevista con Caramel Arrow <span class="kr">· 말하기</span></div>
+      <div class="obj" style="--qc:var(--fresa)"><span class="qz"></span><span class="mark">HABLAR</span> Cuando eras niña, ¿tú también? <span class="kr">· 비교</span></div>
+      <div class="obj" style="--qc:var(--cacao)"><span class="qz"></span><span class="mark">ESCUCHAR</span> Dictado del retrato <span class="kr">· 받아쓰기</span></div>
+      <div class="obj" style="--qc:var(--sombra)"><span class="qz"></span><span class="mark">COMBATE</span> Dark Choco Cookie <span class="kr">· 최종 보스</span></div>
+    </div>
+    <button class="btn cacao" data-go="17">Comenzar Acto II ›</button>
+  </div>
+</section>
+
+<!-- 17 · MEMORIA -->
+<section class="slide" id="sMemo">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Acto II · Juego</div>
+    <h2>Memoria del <span class="accentH">norte</span></h2>
+    <p class="lead" style="font-size:15px">Encuentra las parejas: palabra en español ↔ símbolo y coreano. Di la palabra en voz alta cada vez que encuentres una. <span class="kr">짝을 찾으세요!</span></p>
+    <div class="memo-stats" id="memoStats">Parejas: 0 / 6 · Intentos: 0</div>
+    <div class="memo" id="memoGrid"></div>
+    <div class="feedback" id="memoFb"></div>
+  </div>
+</section>
+
+<!-- 18 · ENTREVISTA -->
+<section class="slide" id="sRol">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Acto II · Misión de rol</div>
+    <h2>Guardia con <span class="accentO">Caramel Arrow</span> 🏹</h2>
+    <div class="cog">
+      <div class="panel cogbox">
+        <h3>1 · Cuenta tu pasado</h3>
+        <div class="rlist" id="rolList"></div>
+      </div>
+      <div class="panel cogbox">
+        <h3>2 · La capitana pregunta 🎙️</h3>
+        <p class="ivq" id="ivQ">Toca el botón y responde en voz alta.</p>
+        <p class="ivhint" id="ivHint"></p>
+        <div style="display:flex;justify-content:center;margin-top:8px">
+          <button class="btn gold" id="ivBtn">🎲 Nueva pregunta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 19 · ¿Y TÚ? -->
+<section class="slide" id="sComp">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Acto II · ¿Y tú?</div>
+    <h2>Cuando eras <span class="accentF">pequeña</span>… 👶</h2>
+    <p class="lead" style="font-size:15px">Lee cómo era la vida en el reino, elige tu respuesta y dila en voz alta con el imperfecto. <span class="kr">소리 내어 말해 보세요!</span></p>
+    <div class="roundtag" id="compRound">Frase 1 / 5</div>
+    <div class="panel" style="width:100%;max-width:700px"><p class="comp-sent" id="compSent"></p></div>
+    <div class="sort-btns">
+      <button class="sort-btn now" id="compSi">🖼️ ¡Yo también!<small>Igual que en el reino</small></button>
+      <button class="sort-btn past" id="compNo">❄️ Yo no<small>Mi infancia era diferente</small></button>
+    </div>
+    <p class="comp-model" id="compModel"></p>
+  </div>
+</section>
+
+<!-- 20 · DICTADO -->
+<section class="slide" id="sDict">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Acto II · Escuchar y escribir</div>
+    <h2>Dictado del <span class="accentO">retrato antiguo</span> 🖼️</h2>
+    <p class="lead" style="font-size:15px">El retrato del rey susurra un recuerdo. Escucha, escribe la frase y comprueba. ¡Cuidado con las tildes! <span class="kr">듣고 쓰세요!</span></p>
+    <div class="roundtag" id="dictRound">Mensaje 1 / 5</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <button class="btn" id="dictPlay">🔊 Escuchar</button>
+      <button class="btn" id="dictSlow">🐢 Más lento</button>
+    </div>
+    <input type="text" class="dict-in" id="dictIn" placeholder="Escribe el mensaje aquí..." autocomplete="off">
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <button class="btn gold" id="dictCheck">🖼️ Comprobar</button>
+      <button class="btn" id="dictNext">Siguiente ›</button>
+    </div>
+    <div class="feedback" id="dictFb"></div>
+    <details class="profe"><summary>👩‍🏫 Solo profe: ver frase</summary><span id="dictSecret"></span></details>
+  </div>
+</section>
+
+<!-- 21 · JEFE FINAL -->
+<section class="slide" id="sBoss2">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz" style="background:var(--sombra)"></span>Combate final · La espada oscura</div>
+    <h2 id="boss2Title">¡<span class="accentU">Dark Choco</span> ataca sin recordar!</h2>
+    <div class="battlefield final" id="battlefield2">
+      <svg style="position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.85" viewBox="0 0 760 240" preserveAspectRatio="xMidYMax slice">
+        <circle cx="120" cy="46" r="18" fill="#e8f2fb" opacity=".6"/>
+        <path d="M420,220 L520,150 L580,186 L660,140 L760,220 Z" fill="#241a34"/>
+        <g fill="#1a1228"><rect x="120" y="176" width="140" height="44"/><rect x="120" y="168" width="22" height="10"/><rect x="156" y="168" width="22" height="10"/><rect x="192" y="168" width="22" height="10"/><rect x="228" y="168" width="22" height="10"/></g>
+        <g fill="#c9a8e8" opacity=".55"><circle cx="300" cy="60" r="3.5"/><circle cx="500" cy="46" r="3"/><circle cx="600" cy="84" r="3.5"/></g>
+        <path d="M0,214 Q200,206 420,214 T760,210 L760,240 L0,240 Z" fill="#e8f2fb" opacity=".18"/>
+      </svg>
+      <div class="battle-top">
+        <span class="enemy-tag">⚠ Enemigo · Príncipe corrompido</span>
+        <div class="party" title="Tu equipo">
+          <i style="background:var(--cacao)"></i><i style="background:var(--hielo)"></i><i style="background:var(--oro)"></i><i style="background:var(--fresa)"></i><i style="background:var(--uva)"></i><i style="background:#fff"></i>
+        </div>
+      </div>
+      <div class="arena">
+        <div class="aura" style="background:radial-gradient(circle, rgba(154,122,208,.5), transparent 65%)"></div>
+        <div class="sprite" id="boss2Sprite">🌑</div>
+        <div class="hplabel">Dark Choco · HP</div>
+        <div class="hpbar seg8"><div class="hpfill" id="boss2Hp"></div></div>
+      </div>
+      <div class="miniSlash" id="miniSlash2"></div>
+    </div>
+    <div id="boss2Game" style="display:flex;flex-direction:column;align-items:center;gap:12px;width:100%">
+      <p class="quiz-q" id="boss2Q"></p>
+      <div class="options" id="boss2Opts" style="max-width:520px"></div>
+    </div>
+    <div id="boss2Win" class="hidden" style="text-align:center">
+      <p class="victory">🕯️ ¡UN RECUERDO SE ENCIENDE! 🕯️</p>
+      <p class="lead">La espada oscura pierde fuerza un momento. El príncipe mira a su padre, susurra algo… y desaparece otra vez en la ventisca. El rey guarda el retrato: —Volverá. La historia continúa…</p>
+      <button class="btn gold" data-go="22" style="margin-top:12px">Ver el final ›</button>
+    </div>
+  </div>
+</section>
+
+<!-- 22 · FINAL -->
+<section class="slide" id="s22">
+  <div class="inner">
+    <div class="eyebrow"><span class="qz"></span>Gran final</div>
+    <h2>Tu <span class="accentO">álbum</span> y tus atajos 🖼️</h2>
+    <p class="lead" style="font-size:15.5px">Última misión: escribe tu propia foto antigua 🎞️ y usa el atajo mágico 🔁. <span class="kr">너의 어린 시절을 써 보세요!</span></p>
+    <div class="write panel" style="width:100%">
+      <label>🎞️ LA FOTO ANTIGUA · Cuando eras pequeña</label>
+      <input type="text" placeholder="1. Cuando era pequeña, vivía en...">
+      <input type="text" placeholder="2. Todos los días jugaba con...">
+      <input type="text" placeholder="3. Mi juguete favorito era... y me gustaba...">
+      <label style="margin-top:8px">🔁 EL ATAJO MÁGICO · Contesta sin repetir</label>
+      <input type="text" placeholder="4. ¿Tienes tu celular? → Sí, ...">
+      <input type="text" placeholder="5. ¿Ves las montañas desde tu casa? → ...">
+    </div>
+    <p class="notice">La foto antigua 🎞️ usa el imperfecto (<b>era, vivía, jugaba</b>) y el atajo 🔁 sustituye la palabra (<b>lo, la, los, las</b>). ¡Misión del norte cumplida, galleta! ❄️</p>
+  </div>
+</section>
+
+</div>
+
+<div id="dots"></div>
+  <script src="script.js"></script>
+</body>
+</html>
